@@ -1,0 +1,86 @@
+/* For screens smaller than 600px (mobile devices) */
+@media (max-width: 600px) {
+    /* Adjust header padding for mobile */
+    header {
+        padding: 10px 0;
+    }
+
+    /* Center-align navigation items */
+    nav ul {
+        text-align: center;
+    }
+
+    /* Increase font size for navigation items */
+    nav ul li {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    /* Adjust project card layout for mobile */
+    .project {
+        margin: 20px 0;
+    }
+
+    /* Add padding to sections for mobile */
+    section {
+        padding: 10px;
+    }
+}
+
+/* For screens between 601px and 1024px (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Add a background color to navigation for tablets */
+    nav {
+        background-color: hsl(55, 82%, 47%);
+    }
+
+    /* Adjust font size for tablets */
+    nav ul li {
+        font-size: 20px;
+    }
+
+    /* Increase padding in sections for tablets */
+    section {
+        padding: 30px;
+    }
+
+    /* Style project cards for tablets */
+    .project {
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+}
+
+/* For screens larger than 1024px (desktop) */
+@media (min-width: 1025px) {
+   
+    nav {
+        background-color: hsl(0, 1%, 22%);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style navigation links for desktop */
+    nav ul li {
+        font-size: 24px;
+    }
+
+    /* Adjust section padding for desktop */
+    section {
+        padding: 40px;
+    }
+
+    /* Style project cards with hover effect for desktop */
+    .project {
+        padding: 30px;
+        margin: 20px 0;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+}
